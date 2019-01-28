@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A423FEA21FF048300E9C102 /* Responder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A423FE921FF048300E9C102 /* Responder.swift */; };
 		7A9CD73821F693ED005D837A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9CD73721F693ED005D837A /* AppDelegate.swift */; };
 		7A9CD73A21F693ED005D837A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9CD73921F693ED005D837A /* ViewController.swift */; };
 		7A9CD73D21F693ED005D837A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A9CD73B21F693ED005D837A /* Main.storyboard */; };
 		7A9CD73F21F693F7005D837A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A9CD73E21F693F7005D837A /* Assets.xcassets */; };
 		7A9CD74221F693F7005D837A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A9CD74021F693F7005D837A /* LaunchScreen.storyboard */; };
+		7A9CD74A21F69F1A005D837A /* UnitConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9CD74921F69F1A005D837A /* UnitConverter.swift */; };
+		7A9CD74E21F6A36C005D837A /* TemperatureRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9CD74D21F6A36C005D837A /* TemperatureRange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A423FE921FF048300E9C102 /* Responder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responder.swift; sourceTree = "<group>"; };
 		7A9CD73421F693ED005D837A /* Unit Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unit Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A9CD73721F693ED005D837A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A9CD73921F693ED005D837A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		7A9CD73E21F693F7005D837A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A9CD74121F693F7005D837A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A9CD74321F693F7005D837A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A9CD74921F69F1A005D837A /* UnitConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConverter.swift; sourceTree = "<group>"; };
+		7A9CD74D21F6A36C005D837A /* TemperatureRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureRange.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 		7A9CD73621F693ED005D837A /* Unit Converter */ = {
 			isa = PBXGroup;
 			children = (
+				7A9CD74C21F6A34F005D837A /* Models */,
+				7A9CD74B21F6A33E005D837A /* ViewModels */,
 				7A9CD73721F693ED005D837A /* AppDelegate.swift */,
 				7A9CD73921F693ED005D837A /* ViewController.swift */,
 				7A9CD73B21F693ED005D837A /* Main.storyboard */,
@@ -62,6 +70,23 @@
 				7A9CD74321F693F7005D837A /* Info.plist */,
 			);
 			path = "Unit Converter";
+			sourceTree = "<group>";
+		};
+		7A9CD74B21F6A33E005D837A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7A9CD74D21F6A36C005D837A /* TemperatureRange.swift */,
+				7A423FE921FF048300E9C102 /* Responder.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7A9CD74C21F6A34F005D837A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7A9CD74921F69F1A005D837A /* UnitConverter.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A9CD74E21F6A36C005D837A /* TemperatureRange.swift in Sources */,
+				7A9CD74A21F69F1A005D837A /* UnitConverter.swift in Sources */,
 				7A9CD73A21F693ED005D837A /* ViewController.swift in Sources */,
+				7A423FEA21FF048300E9C102 /* Responder.swift in Sources */,
 				7A9CD73821F693ED005D837A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
